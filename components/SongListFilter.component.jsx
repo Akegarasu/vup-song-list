@@ -75,7 +75,7 @@ export default function SongListFilter({
 
             {remarkCategories.map((remark) => {
               return (
-                <Col xs={6} md={3}>
+                <Col xs={6} md={3} key={remark}>
                   <div className="d-grid">
                     <Button
                       className={isActive(categorySelection.remark, remark)}
