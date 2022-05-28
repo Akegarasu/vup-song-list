@@ -25,9 +25,9 @@ export default function MandarinBtn({
           initialFilter == alphabet
             ? {
                 backgroundColor: activeColor,
-                cursor: 'url("/cursor_pointer.png"), pointer',
+                cursor: 'url("./assets/cursor/pointer.png"), pointer',
               }
-            : { cursor: 'url("/cursor_pointer.png"), pointer' }
+            : { cursor: 'url("./assets/cursor/pointer.png"), pointer' }
         }
         key={i}
       >
