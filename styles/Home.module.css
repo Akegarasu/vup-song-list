@@ -197,7 +197,7 @@
 
 @media (min-width: 1201px) {
   .outerContainer {
-    background: url("/background.webp") center center no-repeat fixed;
+    background: url("/assets/images/background.webp") center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

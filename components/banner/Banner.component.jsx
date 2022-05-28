@@ -2,16 +2,16 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 import "react-toastify/dist/ReactToastify.css";
-
-import ChevronSVG from "./ChevronSVG.component";
 
 import { Button, Col } from "react-bootstrap";
 
-import imageLoader from "../utils/ImageLoader";
+import imageLoader from "../../utils/ImageLoader";
 
-import { config } from "../config/constants";
+import { config } from "../../config/constants";
+
+import BannerButton from "./BannerButton.component";
 
 export default function Banner({ songCount }) {
   const netEaseMusicComponent = (id) => {
@@ -87,28 +87,29 @@ export default function Banner({ songCount }) {
         <div className={styles.introBoxInnerDiv}>
           <div className={styles.introTitle}>
             <h5>{config.BannerTitle}</h5>
+
+            {/* 网易云 & QQ音乐按钮 如果未填写 id 则不会展示 */}
             <div className="d-flex">
               {netEaseMusicComponent(config.NetEaseMusicId)}
               {qqMusicComponent(config.QQMusicId)}
             </div>
+
           </div>
+          {/* 首页文本 */}
           {config.BannerContent.map((cnt) => {
             return <p className={styles.introParagraph}>{cnt}</p>;
           })}
+
+          {/* 首页自定义按钮 */}
           <div className="d-flex flex-nowrap justify-content-evenly">
             {config.CustomButtons.map((btn) => {
               return (
-                <Link href={btn.link} key={btn.link} passHref>
-                  <a target="_blank">
-                    <Button
-                      className={styles.customRandomButton}
-                      style={{ marginTop: 0, border: "2px solid #DFD1E3" }}
-                    >
-                      <img className={styles.biliIcon} src={btn.image} />{" "}
-                      {btn.name} <ChevronSVG />
-                    </Button>
-                  </a>
-                </Link>
+                <BannerButton
+                  link={btn.link}
+                  image={btn.image}
+                  name={btn.name}
+                  style={{ marginTop: 0, border: "2px solid #DFD1E3" }}
+                ></BannerButton>
               );
             })}
           </div>
