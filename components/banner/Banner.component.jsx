@@ -10,7 +10,7 @@ import { Button, Col } from "react-bootstrap";
 import imageLoader from "../../utils/ImageLoader";
 
 import { config } from "../../config/constants";
-import { useCursor } from "../../utils/utils";
+import { getCursor } from "../../utils/utils";
 
 import BannerButton from "./BannerButton.component";
 
@@ -22,7 +22,7 @@ export default function Banner({ songCount }) {
           target="_blank"
           style={{
             marginRight: "1rem",
-            cursor: useCursor(),
+            cursor: getCursor(),
           }}
           title={config.Name + "的网易云音乐主页"}
         >
@@ -46,7 +46,7 @@ export default function Banner({ songCount }) {
         <a
           target="_blank"
           style={{
-            cursor: useCursor(),
+            cursor: getCursor(),
           }}
           title={config.Name + "的QQ音乐主页"}
         >

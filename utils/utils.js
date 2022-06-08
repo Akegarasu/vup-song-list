@@ -4,8 +4,8 @@ const include = (obj1, obj2) => {
     return obj1?.toString().toLowerCase().includes(obj2.toLowerCase())
 }
 
-const useCursor = () => {
+const getCursor = () => {
     return config.Cursor ? 'url("./assets/cursor/pointer.png"), pointer' : ''
 }
 
-module.exports = { include, useCursor };
+module.exports = { include, getCursor };
