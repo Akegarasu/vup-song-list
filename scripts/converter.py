@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 
-song_df = pd.read_excel('./music_list_7.xlsx')
+song_df = pd.read_excel('./muisc.xlsx')
 song_df = song_df.where(pd.notnull(song_df), None)
 song_list = []
 
@@ -13,5 +13,5 @@ for index, row in song_df.iterrows():
         song_list.append(song_data)
     
 
-with open("./public/music_list.json", 'w') as file:
-    file.write(json.dumps(song_list))
+with open("../public/music_list.json", 'w') as f:
+    f.write(json.dumps(song_list))
