@@ -85,7 +85,7 @@
 
 .customRandomButton:focus,
 .customCategoryButton:focus,
-.mandarinBtn > button:focus {
+.mandarinBtn>button:focus {
   color: #1d0c26;
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: none;
@@ -94,14 +94,14 @@
 
 .customRandomButton:hover,
 .customCategoryButton:hover,
-.mandarinBtn > button:hover {
+.mandarinBtn>button:hover {
   color: #1d0c26;
   background-color: rgba(255, 255, 255, 1);
   cursor: url("/assets/cursor/pointer.png"), pointer;
 }
 
 .customCategoryButton,
-.mandarinBtn > button {
+.mandarinBtn>button {
   color: #1d0c26;
   border-radius: 1rem;
   margin-bottom: 12px;
@@ -132,7 +132,7 @@
   cursor: url("/assets/cursor/pointer.png"), pointer;
 }
 
-.mandarinBtnActive > button {
+.mandarinBtnActive>button {
   color: #1d0c26;
   border-radius: 1rem;
   margin-bottom: 12px;
@@ -141,15 +141,15 @@
   cursor: url("/assets/cursor/pointer.png"), pointer;
 }
 
-.mandarinBtnActive > button:focus,
-.mandarinBtnActive > button:hover {
+.mandarinBtnActive>button:focus,
+.mandarinBtnActive>button:hover {
   color: #1d0c26;
   background-color: #a083a0;
   box-shadow: none;
   cursor: url("/assets/cursor/pointer.png"), pointer;
 }
 
-.mandarinBtnActive > button:active {
+.mandarinBtnActive>button:active {
   color: #1d0c26;
   background-color: #bea5c1;
   box-shadow: none;
@@ -251,6 +251,14 @@
 }
 
 @media (max-width: 1200px) {
+  .outerContainer {
+    background: url("/assets/images/background.webp") center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
   .categorySelectionTitle {
     position: relative;
     top: -2rem;

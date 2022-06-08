@@ -43,7 +43,7 @@ export default function SongDetail({
         )}
         {song.paid == 1 ? (
           <img
-            src="orb.png"
+            src="/assets/icon/orb.png"
             alt="付费"
             className={styles.tableIcons}
             title="付费曲目"
