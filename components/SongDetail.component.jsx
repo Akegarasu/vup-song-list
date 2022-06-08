@@ -33,7 +33,7 @@ export default function SongDetail({
       <td className={styles.tableIconTd}>
         {song.sticky_top == 1 ? (
           <img
-            src="up_arrow.png"
+            src="/assets/icon/up_arrow.png"
             alt="置顶"
             className={styles.tableIcons}
             title="置顶曲目"
