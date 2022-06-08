@@ -97,7 +97,7 @@ export default function Banner({ songCount }) {
           </div>
           {/* 首页文本 */}
           {config.BannerContent.map((cnt) => {
-            return <p className={styles.introParagraph}>{cnt}</p>;
+            return <p className={styles.introParagraph} key={cnt}>{cnt}</p>;
           })}
 
           {/* 首页自定义按钮 */}
@@ -105,6 +105,7 @@ export default function Banner({ songCount }) {
             {config.CustomButtons.map((btn) => {
               return (
                 <BannerButton
+                  key={btn.link}
                   link={btn.link}
                   image={btn.image}
                   name={btn.name}
