@@ -145,7 +145,7 @@ export default function Home() {
             <div className={styles.cornerToggle}>
               <Image
                 loader={imageLoader}
-                src="bilibili_logo_padded.png"
+                src="assets/icon/bilibili_logo_padded.png"
                 alt="去直播间"
                 width={50}
                 height={50}
@@ -176,7 +176,7 @@ export default function Home() {
           <title>{config.Name}的歌单</title>
           <meta name="keywords" content="B站,bilibili,哔哩哔哩,电台唱见,歌单" />
           <meta name="description" content={`${config.Name}的歌单`} />
-          <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
+          <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
         </Head>
 
         <section className={styles.main}>
