@@ -42,3 +42,5 @@ scf_bootstrap
 
 .vscode
 .idea
+
+scripts/*.xlsx

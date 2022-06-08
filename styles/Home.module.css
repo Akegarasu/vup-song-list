@@ -259,7 +259,7 @@
     background-size: cover;
   }
 
-  .categorySelectionTitle {
+  /* .categorySelectionTitle {
     position: relative;
     top: -2rem;
     background-color: #dfd1e3;
@@ -267,6 +267,14 @@
     text-align: center;
     width: 215px;
     height: 16px;
+  } */
+
+  .categorySelectionTitle {
+    margin: auto;
+    text-align: center;
+    width: 215px;
+    height: 16px;
+    margin-bottom: 1rem;
   }
 
   .introBox {
