@@ -161,7 +161,7 @@ export default function Home() {
         <div className={styles.cornerToggle}>
           <Image
             loader={imageLoader}
-            src="self_intro.webp"
+            src="assets/images/self_intro.webp"
             alt="打开自我介绍"
             width={50}
             height={50}
