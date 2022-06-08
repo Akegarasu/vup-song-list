@@ -16,7 +16,7 @@ import BannerButton from "./BannerButton.component";
 export default function Banner({ songCount }) {
   const netEaseMusicComponent = (id) => {
     return id ? (
-      <Link href={"https://music.163.com/#/user?id=" + id} passHref>
+      <Link href={"https://music.163.com/#/artist?id=" + id} passHref>
         <a
           target="_blank"
           style={{
