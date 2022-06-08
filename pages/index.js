@@ -177,11 +177,6 @@ export default function Home() {
           <meta name="keywords" content="B站,bilibili,哔哩哔哩,电台唱见,歌单" />
           <meta name="description" content={`${config.Name}的歌单`} />
           <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
-          <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/custom_icon.png"
-          />
         </Head>
 
         <section className={styles.main}>

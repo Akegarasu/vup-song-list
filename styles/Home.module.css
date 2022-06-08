@@ -39,7 +39,7 @@
 }
 
 .songRow {
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
   transition: background-color 0.25s ease;
 }
 
@@ -50,13 +50,13 @@
 }
 
 .songRowTop {
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
   transition: background-color 0.25s ease;
   background-color: rgba(229, 106, 84, 0.1);
 }
 
 .songRowPaid {
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
   transition: background-color 0.25s ease;
   background-color: rgba(255, 223, 0, 0.1);
 }
@@ -80,7 +80,7 @@
   border: none;
   margin-top: 12px;
   background-color: rgba(255, 255, 255, 0.5);
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
 }
 
 .customRandomButton:focus,
@@ -89,7 +89,7 @@
   color: #1d0c26;
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: none;
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
 }
 
 .customRandomButton:hover,
@@ -97,7 +97,7 @@
 .mandarinBtn>button:hover {
   color: #1d0c26;
   background-color: rgba(255, 255, 255, 1);
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
 }
 
 .customCategoryButton,
@@ -107,7 +107,7 @@
   margin-bottom: 12px;
   border: none;
   background-color: rgba(255, 255, 255, 0.5);
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
 }
 
 .customCategoryButtonActive {
@@ -116,20 +116,20 @@
   margin-bottom: 12px;
   border: none;
   background-color: #bea5c1;
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
 }
 
 .customCategoryButtonActive:focus {
   color: #1d0c26;
   background-color: #bea5c1;
   box-shadow: none;
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
 }
 
 .customCategoryButtonActive:hover {
   color: #1d0c26;
   background-color: #a083a0;
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
 }
 
 .mandarinBtnActive>button {
@@ -138,7 +138,7 @@
   margin-bottom: 12px;
   border: none;
   background-color: #bea5c1;
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
 }
 
 .mandarinBtnActive>button:focus,
@@ -146,7 +146,7 @@
   color: #1d0c26;
   background-color: #a083a0;
   box-shadow: none;
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
 }
 
 .mandarinBtnActive>button:active {
@@ -162,7 +162,7 @@
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0.5);
   color: #1d0c26;
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
   border-radius: 0.5rem;
   padding: 0.75rem;
   border: none;
@@ -172,7 +172,7 @@
 
 .backToTopBtn:hover {
   background-color: white;
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
 }
 
 .tableIconTd {
@@ -314,7 +314,7 @@
 
 .goToLiveDiv {
   position: absolute;
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
   top: 0.25rem;
   left: 0.25rem;
   z-index: 1;
@@ -323,7 +323,7 @@
 
 .offCanvasToggleDiv {
   position: absolute;
-  cursor: url("/assets/cursor/pointer.png"), pointer;
+  /* cursor: url("/assets/cursor/pointer.png"), pointer; */
   top: 0.25rem;
   right: 0.25rem;
   z-index: 1;

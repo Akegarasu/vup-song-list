@@ -1,6 +1,7 @@
 import styles from "../styles/Home.module.css";
 
 import { SplitButton, Dropdown } from "react-bootstrap";
+import { useCursor } from "../utils/utils";
 
 // const activeColor = "#6100ff";
 const activeColor = "#BEA5C1";
@@ -25,9 +26,9 @@ export default function MandarinBtn({
           initialFilter == alphabet
             ? {
                 backgroundColor: activeColor,
-                cursor: 'url("./assets/cursor/pointer.png"), pointer',
+                cursor: useCursor(),
               }
-            : { cursor: 'url("./assets/cursor/pointer.png"), pointer' }
+            : { cursor: useCursor() }
         }
         key={i}
       >

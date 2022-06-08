@@ -7,6 +7,8 @@ let config = {
     QQMusicId: "",
     Footer: "Copyright © 2022 秋葉",
 
+    Cursor: true,
+
     LanguageCategories: ["日语", "英语", "粤语"],
     RemarkCategories: ["流行", "弹唱"],
 
