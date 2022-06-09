@@ -2,9 +2,15 @@ import styles from "../styles/Home.module.css";
 
 import { SplitButton, Dropdown } from "react-bootstrap";
 import { getCursor } from "../utils/utils";
+import MusicList from "../public/music_list.json";
 
-// const activeColor = "#6100ff";
 const activeColor = "#BEA5C1";
+let availableAlphabets = [];
+MusicList.forEach((x) => {
+  if (x.initial.length === 1 && availableAlphabets.indexOf(x.initial) === -1) {
+    availableAlphabets.push(x.initial)
+  }
+})
 
 export default function MandarinBtn({
   languageFilter,
@@ -12,31 +18,6 @@ export default function MandarinBtn({
   setLanguageState,
   setInitialState,
 }) {
-  let dropItems = [];
-  for (let i = 65; i < 91; i++) {
-    let alphabet = String.fromCharCode(i);
-    dropItems.push(
-      <Dropdown.Item
-        onClick={(e) => {
-          initialFilter == alphabet
-            ? setInitialState("")
-            : setInitialState(alphabet);
-        }}
-        style={
-          initialFilter == alphabet
-            ? {
-                backgroundColor: activeColor,
-                cursor: getCursor(),
-              }
-            : { cursor: getCursor() }
-        }
-        key={i}
-      >
-        首字母-{alphabet}
-      </Dropdown.Item>
-    );
-  }
-
   return (
     <div className="d-grid">
       <SplitButton
@@ -52,7 +33,28 @@ export default function MandarinBtn({
             : setLanguageState("国语");
         }}
       >
-        {dropItems}
+        {availableAlphabets.map((alphabet) => {
+          return (
+            <Dropdown.Item
+              onClick={(e) => {
+                initialFilter == alphabet
+                  ? setInitialState("")
+                  : setInitialState(alphabet);
+              }}
+              style={
+                initialFilter == alphabet
+                  ? {
+                      backgroundColor: activeColor,
+                      cursor: getCursor(),
+                    }
+                  : { cursor: getCursor() }
+              }
+              key={alphabet}
+            >
+              首字母-{alphabet}
+            </Dropdown.Item>
+          );
+        })}
       </SplitButton>
     </div>
   );
