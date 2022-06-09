@@ -287,7 +287,7 @@ export default function Home() {
       <BiliPlayerModal
         show={modalPlayerShow}
         onHide={() => setPlayerModalShow(false)}
-        BVID={BVID}
+        bvid={BVID}
         modalPlayerSongName={modalPlayerSongName}
       />
     </div>
